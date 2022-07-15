@@ -1,7 +1,7 @@
 // Common language
 
 // List language code
-
+export const DEFAULT_LANG = "vi";
 // Text Key
 
 // Placeholder

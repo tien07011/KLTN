@@ -1,6 +1,6 @@
 // Common
-export const IMAGE_ROOT_URL = "https://api.bglobalcorp.com/img/";
-export const BASE_URL = "https://api.bglobalcorp.com/api";
+export const BASE_URL = "http://localhost:8080";
+export const IMAGE_ROOT_URL = "http://localhost:8080";
 export const TIMEOUT = 30000;
 export const HEADER_DEFAULT = {
   Accept: "application/json",
@@ -17,3 +17,6 @@ export const STT_INTERNAL_SERVER = 500;
 
 // Api
 
+export const POST_AUTH_LOGIN = "/auth/login";
+export const POST_PROVIDER_AUTH = "/provider/authorize";
+export const GET_CATEGORY = "/category/read?shopCode=277_404";
