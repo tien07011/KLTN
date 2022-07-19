@@ -25,10 +25,35 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/call": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/call.js"
+    ],
+    "/cart": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/cart.js"
+    ],
     "/menu": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/menu.js"
+    ],
+    "/order": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/order.js"
+    ],
+    "/other": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/other.js"
+    ],
+    "/total": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/total.js"
     ]
   },
   "ampFirstPages": []

@@ -1,6 +1,5 @@
 import apisauce from "apisauce";
 import {ApiConstant, KeyConstant, LangConstant} from "const";
-import {getCookies} from "utils";
 
 export const API_CONFIG = {
     baseURL: ApiConstant.BASE_URL,
@@ -9,24 +8,11 @@ export const API_CONFIG = {
     headers: ApiConstant.HEADER_DEFAULT,
 };
 
-export const createApiWithCookie = (initConfig = API_CONFIG, cookie) => {
-    let appCookie = cookie || KeyConstant.KEY_COOKIE;
-    if (appCookie) {
-        initConfig.headers.Authorization = `SESSION=${appCookie}`;
-    }
-
-    initConfig.headers.Cookies = appCookie;
-
+export const createApiWithCookie = (initConfig = API_CONFIG) => {
     return apisauce.create(initConfig);
 };
 
-export const createApiWithAuthorization = (initConfig = API_CONFIG, cookie) => {
-    let appCookie = cookie || KeyConstant.KEY_COOKIE;
-    if (appCookie) {
-        initConfig.headers.Authorization = `SESSION=${appCookie}`;
-    }
-
-    initConfig.headers.Cookies = appCookie;
+export const createApiWithAuthorization = (initConfig = API_CONFIG) => {
     initConfig.headers.Authorization = localStorage.getItem("access_token");
     return apisauce.create(initConfig);
 };

@@ -20,3 +20,5 @@ export const STT_INTERNAL_SERVER = 500;
 export const POST_AUTH_LOGIN = "/auth/login";
 export const POST_PROVIDER_AUTH = "/provider/authorize";
 export const GET_CATEGORY = "/category/read?shopCode=277_404";
+export const GET_ITEM = "/item/read?itemCode=&shopCode=277_404&itemState=";
+export const GET_ITEM_DETAIL = "/item/detail/read?shopCode=277_404";

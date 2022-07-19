@@ -15,16 +15,17 @@ const Product = ({products}) => {
             {products.length > 0 ? (
                 <Grid container spacing={2} className={classes.container}>
                     {products.map((item) => (
-                        <Grid item xs={6} style={{borderColor: "black"}} key={uuid()}>
+                        <Grid item xs={6} style={{borderColor: "black", paddingLeft: 16}} key={uuid()}>
                             <CustomLink
                                 linkProps={{href: PathConstant.MENU + "/" + item.category_code}}
                             >
                                 <CardMedia
                                     component="img"
                                     height="140"
-                                    src={"https://media.istockphoto.com/vectors/default-image-icon-vector-missing-picture-page-for-website-design-or-vector-id1357365823?k=20&m=1357365823&s=612x612&w=0&h=ZH0MQpeUoSHM3G2AWzc8KkGYRg4uP_kuu0Za8GFxdFc="}
+                                    //src={"https://media.istockphoto.com/vectors/default-image-icon-vector-missing-picture-page-for-website-design-or-vector-id1357365823?k=20&m=1357365823&s=612x612&w=0&h=ZH0MQpeUoSHM3G2AWzc8KkGYRg4uP_kuu0Za8GFxdFc="}
+                                    src={item.image}
                                 />
-                                <CardContent>
+                                <CardContent style={{backgroundColor: "#f5ebeb"}}>
                                     <Typography gutterBottom variant="h5" component="div" style={{color: "black"}}>
                                         {item.name}
                                     </Typography>

@@ -12,6 +12,7 @@ import {useRouter} from "next/router";
 import RestoreIcon from "@mui/icons-material/Restore";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import ThermostatIcon from '@mui/icons-material/Thermostat';
 import {uuid} from "../utils";
 
 const menuItems = [
@@ -44,6 +45,12 @@ const menuItems = [
         iconActivate: <CurrencyYenIcon sx={{color: "yellow"}}/>,
         icon: <CurrencyYenIcon color="disabled"/>,
         name: "Total",
+    },
+    {
+        path: PathConstant.OTHER,
+        iconActivate: <ThermostatIcon sx={{color: "yellow"}}/>,
+        icon: <ThermostatIcon color="disabled"/>,
+        name: "Other",
     }
 ]
 
@@ -118,10 +125,12 @@ const useStyles = makeStyles((theme) => ({
     },
     false: {},
     textTrue: {
+        fontSize: 12,
         textAlign: "center",
         color: "black",
     },
     textFalse: {
+        fontSize: 12,
         textAlign: "center",
         color: "#00000042",
     }

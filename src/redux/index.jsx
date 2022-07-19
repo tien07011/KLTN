@@ -2,10 +2,11 @@ import { createStore, applyMiddleware, combineReducers } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import createSagaMiddleware from "redux-saga";
 import rootSaga from "sagas";
+import * as CategoryRedux from "./category.redux";
 
 /* ------------- Assemble The Reducers ------------- */
 export const appReducer = combineReducers({
-
+  categoryRedux: CategoryRedux.reducer,
 });
 
 export const rootReducer = (state, action) => {

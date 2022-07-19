@@ -4,6 +4,7 @@ export const CART = "/cart";
 export const ORDER_VERSION = "/order";
 export const CALL = "/call";
 export const TOTAL = "/total";
+export const OTHER = "/other";
 
 
 
